@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+html{
+    font-size: 18px;
+    background-color: #F6F5F1;
+}
+
+header{
+    background-image: url(/images/hero_bg.png);
+    background-size: contain;
+    background-position: 35% 250%;
+    background-repeat: no-repeat;
+    margin-bottom: 90px;
+}
+
+/***********Navigation**************/
+nav{
+    border-bottom: 1px solid #E0E6E3;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    align-items: center;
+    display: flex;
+    min-width:max-content;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #163A34;
+    letter-spacing: 0%;
+    gap: 0.5em;
+    line-height:140%;
+}
+
+.nav-link-wrapper{
+    list-style: none;
+    display: flex;
+    gap:2em;
+}
+
+.nav-link{
+    text-decoration: none;
+    line-height: 150%;
+    font-size: 1rem;
+    letter-spacing: -0.3px;
+    color: #163A34;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid #FE9F6B;
+    transition: 150ms ease-in;
+}
+
+/**********hero*************/
+.hero{
+    margin-top: 96px;
+}
+
+.hero_cnt{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width:85%;
+
+}
+
+h1, h2, h3{
+    font-weight: 800;
+    font-size: 2.9rem;
+    line-height: 110%;
+    color:#163A34
+}
+
+.desc{
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    color:#395852;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+}
+
+.hero-img{
+    border: 12px solid #ffff;
+    border-radius: 12px;
+    filter: drop-shadow(12px 12px 12px rgba(255, 255, 255, 1));
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*************Features section*****************/
+.features{
+    margin: 0 auto;
+    max-width: 85%;
+    border-bottom: 1px solid #E0E6E3;
+}
+
+.features_wrapper{
+    padding-block: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.feature{
+    max-width: fit-content;
+    margin-inline: 12px;
+}
+
+.feature:first-child{
+    flex-basis: 60%;
+}
+
+h2{
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1px;
+
+}
+
+.feature_desc{
+    text-align: left;
+    color:#395852;
+    margin-top: 12px;
+}
+
+/*********Real Life Section*********/
+.real_life{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.real_life_cnt{
+    margin-block: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.real_life_cnt .desc,
+.real_life_cnt .desc h2{
+    text-align: left;
+    margin: 0;
+    max-width: fit-content;
+}
+
+.real_life_cnt .desc{
+    max-width: 48%
+}
+
+
+
+.rl_img{
+    border-radius: 12px;
+    max-width: 50%;
+}
+
+/***********Cta section *********/
+.cta_section{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.cta_cnt{
+    display: flex;
+    background-color: #E9EDE8;
+    justify-content: space-between;
+}
+
+.cta_desc{
+    padding-block: 40px;
+    margin-inline: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta_desc h2{
+    margin-top:20px;
+}
+
+.cta_cnt img{
+    max-width: 20%;
+}
+
+/*********footer*************/
+footer{
+    margin: 0 auto;
+    padding-block: 40px;
+    max-width: 85%;
+}
+
+.footer_cnt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_links{
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+
+/**********span*******/
+span{
+    background-image: linear-gradient(180deg, transparent 45%, #fe9e6b86);
+    background-position: center;
+    color:#163A34;
+    font-weight: 800;
+}
+
+
+/*************Buttons***************/
+.cta{
+    padding: 12px 16px;
+    background-color: #163A34;
+    color:#ffff;
+    border: none;
+    border-radius: 10px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight:700;
+    min-width: fit-content;
+}
+
+.hero_btn{
+    padding-inline: 32px;
+    margin: 28px auto;
+}
+
