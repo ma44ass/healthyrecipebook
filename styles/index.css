@@ -10,10 +10,17 @@ html{
     background-color: #F6F5F1;
 }
 
-header{
+section{
+    padding-top: 50px;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.main_home{
     background-image: url(/images/hero_bg.png);
     background-size: contain;
-    background-position: 35% 250%;
     background-repeat: no-repeat;
     margin-bottom: 90px;
 }
@@ -61,18 +68,8 @@ nav{
 
 /**********hero*************/
 .hero{
-    margin-top: 96px;
-}
-
-.hero_cnt{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    margin: 96px auto;
     justify-content: center;
-    gap: 2rem;
-    max-width:85%;
-
 }
 
 h1, h2, h3{
@@ -105,17 +102,11 @@ h1, h2, h3{
 }
 
 /*************Features section*****************/
-.features{
-    margin: 0 auto;
-    max-width: 85%;
-    border-bottom: 1px solid #E0E6E3;
-}
 
 .features_wrapper{
-    padding-block: 30px;
+    padding-block: 40px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
 }
 
 .feature{
@@ -148,22 +139,21 @@ h3{
     margin-top: 12px;
 }
 
-/*********Real Life Section*********/
-.real_life{
-    max-width: 85%;
-    margin: 0 auto;
-}
+/*********Home: Real Life Section*********/
 
 .real_life_cnt{
-    margin-block: 48px;
+    padding-top: 80px;;
+    margin-block: 80px;
     display: flex;
     justify-content: space-between;
+    border-top:  1px solid #E0E6E3;
 }
 
 .real_life_cnt .desc,
 .real_life_cnt .desc h2{
     text-align: left;
-    margin: 0;
+    margin-top:  30px;
+    margin-left: 0;
     max-width: fit-content;
 }
 
@@ -171,19 +161,12 @@ h3{
     max-width: 48%
 }
 
-
-
 .rl_img{
     border-radius: 12px;
     max-width: 50%;
 }
 
 /***********Cta section *********/
-.cta_section{
-    max-width: 85%;
-    margin: 0 auto;
-}
-
 .cta_cnt{
     display: flex;
     background-color: #E9EDE8;
@@ -192,14 +175,14 @@ h3{
 
 .cta_desc{
     padding-block: 40px;
-    margin-inline: 6px;
+    margin-inline: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .cta_desc h2{
     margin-top:20px;
+    text-align: center;
 }
 
 .cta_cnt img{
@@ -226,7 +209,7 @@ footer{
 
 
 /**********span*******/
-span{
+.desc span{
     background-image: linear-gradient(180deg, transparent 45%, #fe9e6b86);
     background-position: center;
     color:#163A34;
